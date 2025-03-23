@@ -1,4 +1,4 @@
-vim.o.wildmode = "longest,full"
+vim.o.wildmode = "noselect:full"
 vim.o.autochdir = true
 
 local work_polish = vim.fs.normalize "~/.work-repo/nvim/polish.lua"
