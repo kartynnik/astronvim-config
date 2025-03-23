@@ -6,4 +6,8 @@ return {
     event = "InsertEnter",
     config = true,
   },
+  {
+    "kevinhwang91/nvim-ufo",
+    enabled = false,
+  },
 }
