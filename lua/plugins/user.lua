@@ -10,4 +10,8 @@ return {
     "kevinhwang91/nvim-ufo",
     enabled = false,
   },
+  {
+    "windwp/nvim-autopairs",
+    enabled = false,
+  }
 }
