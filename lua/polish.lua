@@ -3,6 +3,7 @@ vim.o.autochdir = true
 vim.o.virtualedit = "all"
 vim.o.cmdheight = 1
 vim.o.matchpairs = "(:),{:},[:],<:>"
+vim.o.conceallevel = 2
 
 local work_polish = vim.fs.normalize "~/.work-repo/nvim/polish.lua"
 if vim.uv.fs_stat(work_polish) then loadfile(work_polish)() end
