@@ -1,4 +1,11 @@
 ---@type LazySpec
+local better_escape_mappings = {
+  j = {
+    j = false,   -- Disable jj
+    k = "<Esc>", -- Enable jk
+  },
+}
+
 return {
   "kartynnik/vim-janah",
   {
@@ -37,5 +44,17 @@ return {
   {
     "windwp/nvim-autopairs",
     enabled = false,
-  }
+  },
+  {
+    "max397574/better-escape.nvim",
+    opts = {
+      mappings = {
+        i = better_escape_mappings,  -- Insert mode
+        c = better_escape_mappings,  -- Command mode
+        t = better_escape_mappings,  -- Terminal mode
+        v = better_escape_mappings,  -- Visual mode
+        s = better_escape_mappings,  -- Select mode
+      },
+    },
+  },
 }
